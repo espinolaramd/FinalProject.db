@@ -1,6 +1,6 @@
 #Diego Espinola
 #05.08.2020
-#Final project/ DataBase Tale with ERD.
+#Final project/ DataBase Talbe with ERD.
 
 import sqlite3
 from sqlite3 import Error
@@ -86,7 +86,7 @@ execute_query(connection,create_orderlineitem_table)
 #----------------------------------------------------------------------
 Menu = 0
 while Menu != 5:
-    print('1)Customers table \n2) Books table \n3) orders table \n4)Order line item \n5) Exit Program')
+    print('1)Customers table \n2)Books table \n3)Orders table \n4)Order line item \n5)Exit Program')
     Menu = int(input("Welcome, please select the table:"))
     if Menu == 1:
         print("Customers menu:")
@@ -137,7 +137,7 @@ while Menu != 5:
                 print(person)
 
         if option == 4:
-                print("Please enter the details of the costuer you want to delete")
+                print("Please enter the details of the costumer you want to delete")
                 last_name_delete = input("last name \n>")
                 delete_customer = f"""
                 
